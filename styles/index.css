@@ -13,7 +13,6 @@ main, header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 46px;
 }
 
 body {
@@ -24,12 +23,17 @@ body {
 }
 
 header {
+  gap: 36px;
   margin-top: 76px;
 }
 
 header h2 {
   font-size: 24px;
   font-weight: 800;
+}
+
+a {
+  color: #F0E5B0;
 }
 
 .avatar {
@@ -58,7 +62,7 @@ header h2 {
 
 main {
   margin-top: 46px;
-  gap: 35px;
+  gap: 26px;
 }
 
 main p {
@@ -66,6 +70,7 @@ main p {
   max-width: 50%;
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 0px;
 }
 
 main p strong {
