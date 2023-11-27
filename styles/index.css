@@ -6,25 +6,28 @@
 
 body, html {
   width: 100%;
+  height: 100%;
 }
 
-main, header {
+body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-body {
   background: #1D2129;
   color: #F0E5B0;
   font-family: 'Open Sans', sans-serif;
-  padding-bottom: 35px;
+  padding: 35px 0 35px 0 ;
 }
 
-header {
-  gap: 36px;
-  margin-top: 76px;
+header, main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 760px;
+  width: 100%;
+  gap: 26px;
 }
 
 header h2 {
@@ -37,14 +40,14 @@ a {
 }
 
 .avatar {
-  width: 50vw;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
 .avatar > img {
-  width: 40%;
+  width: 40vw;
   max-width: 281px;
   border-radius: 50%;
   border: 6px solid transparent;
@@ -55,19 +58,19 @@ a {
 .avatar::after, .avatar::before {
   content: '';
   flex: 1;
-  width: 23.43%;
+  min-width: 23.43%;
   height: 4px;
   background: #49B4AF;
 }
 
 main {
-  margin-top: 46px;
+  max-width: 760px;
+  margin-top: 38px;
   gap: 26px;
 }
 
 main p {
   text-align: center;
-  max-width: 50%;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0px;
@@ -91,17 +94,12 @@ main p strong {
   pointer-events: none;
 }
 
-@media (max-width: 768px) {
-  main p {
-    text-align: center;
-    max-width: 68%;
-  }
-
-  .avatar {
-    width: 75vw;
+@media (max-width: 886px) {
+  header, main {
+    max-width: 86vw;
   }
 
   .avatar > img {
-    width: 45%;
+    max-width: 36%;
   }
 }
